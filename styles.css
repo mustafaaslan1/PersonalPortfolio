@@ -558,7 +558,7 @@
     .dark-mode .darkMode i {
         color: #222;
         background-color: white;
-        border: 3px solid black;
+        border: 3px solid rgb(107, 107, 107);
         box-shadow: 0 0 20px rgb(40, 215, 113);
     }
 
