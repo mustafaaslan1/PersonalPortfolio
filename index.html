@@ -16,21 +16,26 @@
         <h1 class="logo">MUSTAFA ASLAN</h1>
         <i class="fa-solid fa-bars" id="menu-icon"></i>
         <div class="navbar" id="navbar">
-            <a href="#home">Ana Sayfa</a>
-            <a href="#education">Eğitim</a>
-            <a href="#skills">Beceriler</a>
-            <a href="#aboutme">Hakkımda</a>
-            <a href="#contact">İletişim</a>
+            <a href="#home" id="navhome">Ana Sayfa</a>
+            <a href="#education" id="naveducation">Eğitim</a>
+            <a href="#skills" id="navskills">Beceriler</a>
+            <a href="#aboutme" id="navabout">Hakkımda</a>
+            <a href="#contact" id="navcontact">İletişim</a>
+        </div>
+        <div class="languageIcon">
+            <img id="tr-flag" src="photo/tr.png" alt="TR Flag" onclick="changeLanguage('tr')">
+            <img id="en-flag" src="photo/en.png" alt="UK Flag" onclick="changeLanguage('en')">
         </div>
     </header>
     <!--HEADER END-->
     <!--HEADER MENU-->
     <section id="home">
         <div class="main">
-            <h1>WEB SİTESİ Mİ LAZIM?</h1>
-            <h3 class="text-animation">Ben <span></span></h3>
-            <p>Kullanışlı ve etkili bir site için</p>
-            <button class="btn"><a href="#contact">Bana Ulaşın</a></button>
+            <h1 id="main1">WEB SİTESİ Mİ LAZIM?</h1>
+            <h2 id="mainh2">Ben</h2>
+            <h3 id="mainh3" class="text-animation"><span></span></h3>
+            <p id="mainp">Kullanışlı ve etkili bir site için</p>
+            <button class="btn"><a href="#contact" id="homebtn" >Bana Ulaşın</a></button>
         </div>
         <div class="mainimg">
             <img src="/photo/webresim.png" alt="">
@@ -45,16 +50,15 @@
 
     <!--EDUCATION START-->
     <section id="education">
-        <h2 class="heading">Eğitim Bilgileri</h2>
+        <h2 class="heading" id="educationh2">Eğitim Bilgileri</h2>
         <div class="timeline-items">
             <div class="timeline-item">
                 <div class="timeline-dot"></div>
                 <div class="timeline-date">2017-2021</div>
                 <div class="timeline-content">
-                    <h3>Lise
-                        <hr><br>
-                    </h3>
-                    <p>
+                    <h3 id="educationhigh">Lise</h3>
+                    <br><hr><br>
+                    <p id="educationp1">
                         Lise öğrenimini Amasya Sınav Fen Lisesi'nde tamamladı.
                         Başarılı bir öğrenci profili çizdikten sonra üniversite sınavını kazanıp
                         bilgisayar mühendisliği okudu.
@@ -66,10 +70,9 @@
                 <div class="timeline-dot"></div>
                 <div class="timeline-date">2022-2026</div>
                 <div class="timeline-content">
-                    <h3>Üniversite
-                        <hr><br>
-                    </h3>
-                    <p>
+                    <h3 id="educationuniversity">Üniversite</h3>
+                    <br><hr><br>
+                    <p id="educationp2">
                         Üniversite sınavına girdikten sonra <b>Bilgisayar Mühendisliği</b> bölümünü kazandı.
                         Eğitimine başarılı bir şekilde devam ediyor.
                     </p>
@@ -81,7 +84,7 @@
 
     <!--SKILLS START-->
     <section id="skills">
-        <h2 class="heading">Beceriler</h2>
+        <h2 class="heading" id="skillsheading">Beceriler</h2>
         <div class="skills-container">
             <div class="skill-box">
                 <div class="skill-info">
@@ -157,10 +160,10 @@
     <!--ABOUT ME START-->
     <section id="aboutme">
         <div class="aboutme-content">
-            <h2 class="heading">Hakkımda</h2>
+            <h2 class="heading" id="aboutmeheading">Hakkımda</h2>
             <div class="aboutme-box">
                 <img src="photo/webresim.png" alt="">
-                <p> Mustafa Aslan, 30 Kasım 2002 Mersin Erdemli'de doğdu. İlk okul döneminden lise dönemine kadar
+                <p id="aboutmep"> Mustafa Aslan, 30 Kasım 2002 Mersin Erdemli'de doğdu. İlk okul döneminden lise dönemine kadar
                     Mersin'de çeşitli okullarda okudu.
                     Liseyi kazandığında ailesi ile birlikte taşındığı Amasya'da Amasya Sınav Fen Lisesinde okudu. Sınav
                     Fen Lisesinden mezun olduktan sonra
@@ -179,22 +182,22 @@
     <!--CONTACT START-->
     <section id="contact">
         <div class="contact-content">
-            <h2 class="heading">İletişim</h2>
-            <h3 class="heading2">Bizimle iletişim kurmak için aşağıdaki bilgileri doldurmalısınız.</h3>
+            <h2 class="heading" id="contactheading">İletişim</h2>
+            <h3 class="heading2" id="contactheading2">Bizimle iletişim kurmak için aşağıdaki bilgileri doldurmalısınız.</h3>
             <div class="contact-form">
                 <div class="contact-box">
                     <input type="text" placeholder="Adınız" pattern="[A-Za-zğüşıöçĞÜŞİÖÇ\s]+"
-                        title="Sadece harf girişi yapabilirsiniz." required>
+                        title="Sadece harf girişi yapabilirsiniz." required id="contactName">
                     <input type="text" placeholder="Soyadınız" pattern="[A-Za-zğüşıöçĞÜŞİÖÇ\s]+"
-                        title="Sadece harf girişi yapabilirsiniz." required>
+                        title="Sadece harf girişi yapabilirsiniz." required id="contactSurname">
                 </div>
                 <div class="contact-box">
-                    <input type="email" name="email" id="" placeholder="E-Posta" required>
-                    <input type="text" placeholder="Konu" required>
+                    <input type="email" name="email" id="" placeholder="Mail" required id="contactMail">
+                    <input type="text" placeholder="Konu" required id="contactTopic">
                 </div>
                 <div class="contact-form2">
-                    <textarea placeholder="Mesajınızı Buraya Yazabilirsiniz" cols="30" rows="10" required></textarea>
-                    <input type="submit" value="Mesaj Gönder" class="sbmbtn">
+                    <textarea placeholder="Mesajınızı Buraya Yazabilirsiniz" cols="30" rows="10" required id="contactMessage"></textarea>
+                    <input type="submit" value="Mesaj Gönder" class="sbmbtn" id="sbmbtn">
                 </div>
             </div>
     </section>
@@ -204,11 +207,12 @@
     </div>
     <!--FOOTER START-->
     <footer class="footer">
-        <p class="copyright">&copy; Mustafa Aslan - 2024 | Tüm Hakları Saklıdır</p>
+        <p class="copyright" id="footer">&copy; Mustafa Aslan - 2024 | Tüm Hakları Saklıdır</p>
     </footer>
     <!--FOOTER END-->
     <script src="menu.js"></script>
     <script src="darkmode.js"></script>
+    <script src="language.js"></script>
 </body>
 
 </html>

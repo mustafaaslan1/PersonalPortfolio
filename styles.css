@@ -27,7 +27,7 @@
         font-size: 40px;
         font-weight: bold;
         color: white;
-        margin-left: 50px;
+        margin-left: 30px;
         transition: 0.6s;
     }
 
@@ -43,7 +43,7 @@
     .navbar a {
         font-size: 20px;
         color: white;
-        margin-right: 90px;
+        margin-right: 70px;
         font-weight: 250;
         text-decoration: none;
     }
@@ -55,6 +55,15 @@
         font-weight: bold;
         transform: scale(1.1);
         transition: 0.3s;
+    }
+
+    .languageIcon img{
+        width: 20px;
+        height: 15px;
+        margin-right: 70px;
+        margin-left: -60px;
+        margin-top: 5px;
+        cursor: pointer;
     }
 
     #menu-icon {
@@ -70,14 +79,14 @@
 
     /*HEADER END*/
 
-    /*HOME START*/
+    /*HOME START*/      
     #home {
         margin-bottom: 100px;
         padding-top: 100px;
     }
 
     .main h1 {
-        padding-left: 170px;
+        padding-left: 185px;
         padding-top: 250px;
         color: white;
         font-size: 50px;
@@ -157,11 +166,21 @@
         box-shadow: 0 0 20px white;
     }
 
+    .main h2 {
+        font-family: Arial, Helvetica, sans-serif;
+        color: white;
+        display: inline-block;
+        font-size: 34px;
+        margin-left: 220px;
+        min-width: 280px;
+    }
+
     .main .text-animation {
         font-family: Arial, Helvetica, sans-serif;
         color: white;
+        display: inline-block;
         font-size: 34px;
-        margin-left: 240px;
+        margin-left: -200px;
         min-width: 280px;
     }
 
@@ -198,20 +217,14 @@
     }
 
     @keyframes words {
-
-        0%,
-        20% {
-            content: "Bilgisayar Mühendisiyim.";
+        0%, 20% {
+            content: "Bilgisayar Mühendisiyim";
         }
-
-        21%,
-        40% {
-            content: "Software Developer'ım."
+        21%, 40% {
+            content: "Yazılım Geliştiriciyim";
         }
-
-        41%,
-        60% {
-            content: "Front-End Developer'ım."
+        41%, 60% {
+            content: "Front-End Geliştiriciyim";
         }
     }
 
@@ -423,7 +436,7 @@
         align-items: center;
         background-color: rgb(66, 105, 106);
         color: white;
-        height: 500px;
+        height: 540px;
         width: 500px;
         border-radius: 25px;
         border: 4.5px solid rgb(71, 71, 71);
@@ -660,6 +673,15 @@
             margin-left: 20px;
         }
 
+        .languageIcon img{
+            width: 20px;
+            height: 15px;
+            margin-right: 130px;
+            margin-left: -200px;
+            margin-top: 5px;
+            cursor: pointer;
+        }
+
         .navbar {
             flex-direction: column;
             align-items: center;
@@ -685,7 +707,7 @@
         #menu-icon {
             display: block;
             color: white;
-            margin-right: 20px;
+            margin-right: -300px;
         }
 
         /*HOME START*/
