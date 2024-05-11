@@ -120,7 +120,7 @@ function updatePlaceholders() {
         'en': {
             'contactName': 'Your Name',
             'contactSurname': 'Your Surname',
-            'contactMail': 'Email',
+            'contactMail': 'Mail Adress',
             'contactTopic': 'Topic',
             'contactMessage': 'Write Your Message Here',
             'sbmbtn': 'Send Message',
