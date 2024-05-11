@@ -1,4 +1,4 @@
-//Menü açma kapama, menü açıldığında menü ikonu yerine x gelmesi.
+//Menü açma kapama tuşu, menü ikonuna basıldığında X aktif hale geliyor.
 const menuIcon = document.getElementById("menu-icon");
 const navbar = document.getElementById("navbar");
 
