@@ -181,7 +181,7 @@
         color: white;
         display: inline-block;
         font-size: 34px;
-        margin-left: -200px;
+        margin-left: -210px;
         min-width: 280px;
     }
 
@@ -219,13 +219,13 @@
 
     @keyframes words {
         0%, 20% {
-            content: "Bilgisayar Mühendisiyim";
+            content: "Computer Engineer";
         }
         21%, 40% {
-            content: "Yazılım Geliştiriciyim";
+            content: "Software Developer";
         }
         41%, 60% {
-            content: "Front-End Geliştiriciyim";
+            content: "Front-End Developer";
         }
     }
 

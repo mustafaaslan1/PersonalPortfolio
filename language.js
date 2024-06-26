@@ -6,7 +6,6 @@ const languages = {
         'navabout': 'Hakkımda',
         'navcontact': 'İletişim',
         'main1': 'WEB SİTESİ Mİ LAZIM?',
-        'mainh2': 'Ben',
         'mainp': 'Kullanışlı ve etkili bir site için',
         'homebtn': 'Bana Ulaşın',
         'educationh2': 'Eğitim Bilgileri',
@@ -40,7 +39,6 @@ const languages = {
         'navabout': 'About Me',
         'navcontact': 'Contact',
         'main1': 'NEED A WEBSITE?',
-        'mainh2': 'I am',
         'mainp': 'For a useful and effective site',
         'homebtn': 'Contact Me',
         'educationh2': 'Education Information',
@@ -91,7 +89,6 @@ function updateContent() {
     document.getElementById('navabout').textContent = content['navabout'];
     document.getElementById('navcontact').textContent = content['navcontact'];
     document.getElementById('main1').textContent = content['main1'];
-    document.getElementById('mainh2').textContent = content['mainh2'];
     document.getElementById('mainp').textContent = content['mainp'];
     document.getElementById('homebtn').textContent = content['homebtn'];
     document.getElementById('educationh2').textContent = content['educationh2'];
