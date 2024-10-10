@@ -87,10 +87,10 @@
     }
 
     .main h1 {
-        padding-left: 185px;
+        padding-left: 170px;
         padding-top: 250px;
         color: white;
-        font-size: 50px;
+        font-size: 45px;
     }
 
     .main p {
@@ -181,7 +181,7 @@
         color: white;
         display: inline-block;
         font-size: 34px;
-        margin-left: -210px;
+        margin-left: -290px;
         min-width: 280px;
     }
 
@@ -194,6 +194,9 @@
         content: "";
         color: black;
         animation: words 20s infinite;
+    }
+    .main .text-animation  {
+        color: black; 
     }
 
     .text-animation span::after {
@@ -218,14 +221,7 @@
     }
 
     @keyframes words {
-        0%, 20% {
-            content: "Computer Engineer";
-        }
-        21%, 40% {
-            content: "Software Developer";
-        }
-        41%, 60% {
-            content: "Front-End Developer";
+        0%, 100% {
         }
     }
 
@@ -589,6 +585,10 @@
     .dark-mode .text-animation span::before,
     .dark-mode .social i, .dark-mode .heading,
     .dark-mode .heading2 {
+        color: white;
+    }
+
+    .dark-mode .text-animation {
         color: white;
     }
 

@@ -5,7 +5,7 @@ const languages = {
         'navskills': 'Beceriler',
         'navabout': 'Hakkımda',
         'navcontact': 'İletişim',
-        'main1': 'WEB SİTESİ Mİ LAZIM?',
+        'main1': 'WEB SİTESİ Mİ GEREKİYOR?',
         'mainp': 'Kullanışlı ve etkili bir site için',
         'homebtn': 'Bana Ulaşın',
         'educationh2': 'Eğitim Bilgileri',
@@ -30,6 +30,7 @@ const languages = {
         'contactheading': 'İletişim',
         'contactheading2': 'Bizimle iletişim kurmak için aşağıdaki bilgileri doldurmalısınız.',
         'footer': '© Mustafa Aslan - 2024 | Tüm Hakları Saklıdır',
+        'text-animation': 'Bilgisayar Mühendisliği Öğrencisi',
     },
 
     'en': {
@@ -38,7 +39,7 @@ const languages = {
         'navskills': 'Skills',
         'navabout': 'About Me',
         'navcontact': 'Contact',
-        'main1': 'NEED A WEBSITE?',
+        'main1': 'DO YOU NEED A WEBSITE?',
         'mainp': 'For a useful and effective site',
         'homebtn': 'Contact Me',
         'educationh2': 'Education Information',
@@ -61,6 +62,7 @@ const languages = {
         'contactheading': 'Contact Us',
         'contactheading2': 'You must fill in the information below to contact us.',
         'footer': '© Mustafa Aslan - 2024 | All Rights Reserved',
+        'text-animation': 'Computer Engineering Student',
     }
 }
 
@@ -102,6 +104,8 @@ function updateContent() {
     document.getElementById('contactheading').textContent = content['contactheading'];
     document.getElementById('contactheading2').textContent = content['contactheading2'];
     document.getElementById('footer').textContent = content['footer'];
+    document.getElementById('animation').innerText = content['text-animation']; 
+    document.getElementById('animation').classList.add('highlight');
 }
 
 function updatePlaceholders() {
